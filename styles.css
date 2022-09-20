@@ -1,0 +1,595 @@
+:root {
+--dark: #000;
+--dark-shade: #100E40;
+--accent: #FFB200;
+--light: #F7E8E1;
+}
+
+* {
+     margin: 0;
+     border: 0;
+}
+
+.header__container {
+    width: 100vw;
+    height: 110px;
+    z-index: 4;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: right;
+
+    background-image: linear-gradient(var(--dark) 70%, transparent 100%);;
+}
+
+.header__logo {
+    height: 80px;
+    width: 80px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header__navbar--container {
+    width: 100%;
+    height: 100px;
+
+    position: fixed;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__navbar {
+    width: 100%;
+    padding: 0;
+
+    display: flex;
+    justify-content: right;
+    gap: 5%;
+}
+
+.navbar__link--container {
+    color: var(--light);
+    font-size: 15px;
+    font-family: "Syne Mono";
+
+    list-style-type: none;
+}
+
+.header__navbar--link {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.header__navbar--link:hover {
+    color: var(--accent);
+}
+
+.welcome__container {
+    width: 100vw;
+    height: 930px;
+
+    background-image: linear-gradient(var(--dark), var(--dark-shade));
+}
+
+.welcome__icon {
+    width: 125px;
+    height: 153px;
+
+    position: absolute;
+    top: 100px;
+    right: 45px;
+}
+
+.welcome__heading {
+    width: 220px;
+    height: 180px;
+
+    position: relative;
+    top: 250px;
+
+    color: var(--light);
+    font-size: 40px;
+    font-family: "Syne Mono";
+}
+
+.welcome__text--container {
+    width: 340px;
+    height: 500px;
+
+    position: absolute;
+    top: 400px;
+    right: -10px;
+}
+
+.welcome__text {
+    max-width: 300px;
+
+    padding: 40px 0;
+
+    color: var(--light);
+    font-size: 15px;
+    font-family: "Share Tech Mono";
+    text-align: right;
+}
+
+.name {
+    color: var(--accent);
+}
+
+.projects__container {
+    width: 100%;
+    height: 1480px;
+
+    background-image: linear-gradient(var(--dark-shade) 70%, var(--dark) 100%);
+}
+
+.projects__icon--saturn {
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+    top: 900px;
+    left: 10px;
+
+    animation: floating 3s infinite ease-in-out;
+}
+
+.projects__icon--star {
+    width: 140px;
+    height: 140px;
+
+    position: absolute;
+    top: 1340px;
+    right: 30px;
+}
+
+.projects__icon--fly {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 1880px;
+    left: 50px;
+
+    animation: floating 3s infinite ease-in-out;
+}
+
+.projects__icon--rocket {
+    width: 130px;
+    height: 130px;
+
+    position: absolute;
+    display: none;
+}
+
+.projects__heading {
+    position: relative;
+    top: 107px;
+    
+    color: var(--light);
+    font-size: 40px;
+    font-family: "Syne Mono";
+    text-align: right;
+}
+
+.projects__tile--container {
+    width: 100vw;
+    max-width: 716px;
+    height: 1250px;
+    margin: auto;
+
+    position: relative;
+    top: 190px;
+}
+
+.projects__group--1, .projects__group--2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__tile {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+
+    filter: grayscale(100%) brightness(45%);
+}
+
+.project__tile:hover {
+    filter: brightness(70%);
+}
+
+.project__tile--right {
+    margin-left: 150px;
+}
+
+.project__tile--left {
+    margin-right: 150px;
+}
+
+.projects__button--container {
+    width: 365px;
+    height: 200px;
+
+    position: absolute;
+    margin-top: 20px;
+    right: 5%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.projects__button {
+    margin: 50px 0;
+
+    position: absolute;
+    text-align: center;
+
+    color: var(--accent);
+    font-size: 23px;
+    font-family: "Share Tech Mono";
+    background-color: transparent;
+    border: none;
+}
+
+.projects__icon--asteroid {
+    width: 320px;
+    height: 200px;
+
+    position: absolute;
+    top: 0px;
+}
+
+.contact__container {
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+
+    background-color: var(--dark);
+}
+
+.contact__heading {
+    width: 220px;
+    height: 150px;
+
+    position: relative;
+    top: 50px;
+
+    color: var(--light);
+    font-size: 40px;
+    font-family: "Syne Mono";
+}
+
+.contact__links--container {
+    width: 350px;
+    height: 160px;
+
+    position: absolute;
+    left: 0;
+}
+
+.contact__link--github {
+    width: 50px;
+    height: 50px;
+
+    position: relative;
+    top: 30px;
+    left: 240px;
+
+    animation: floating2 3s infinite ease-in-out;
+}
+
+.contact__link--email {
+    width: 60px;
+    height: 60px;
+
+    position: relative;
+    top: 30px;
+    left: 73px;
+
+    animation: floating2 3s infinite 1s ease-in-out;
+}
+
+.contact__link--pinterest {
+    width: 60px;
+    height: 60px;
+
+    position: relative;
+    top: 70px;
+    left: -90px;
+
+    animation: floating2 3s infinite 2s ease-in-out;
+}
+
+.footer__container {
+    width: 100vw;
+    height: 550px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__icon {
+    width: 450px;
+    height: 550px;
+
+    position: relative;
+    bottom: -90px;
+
+    transform: rotate(9deg);
+}
+
+.footer__copyright--container {
+    position: absolute;
+    top: 315px;
+}
+
+.footer__copyright {
+    width: 300px;
+    height: 40px;
+    
+    color: var(--dark-shade);
+    font-size: 23px;
+    font-family: "Share Tech Mono";
+    font-weight: 100;
+}
+
+@keyframes floating {
+
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, 0px); }   
+}
+
+@keyframes floating2 {
+
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 5px); }
+    100%   { transform: translate(0, 0px); }   
+}
+
+@media (min-width:610px) {
+
+    .navbar__link--container {
+        font-size: 20px;
+    }
+    
+    .welcome__container {
+        height: 600px;
+    }
+
+    .welcome__heading {
+        width: 350px;
+    }
+    
+    .welcome__text--container {
+        width: 450px;
+        height: 200px;
+
+        right: 80px;
+    }
+
+    .welcome__text {
+        padding: 3px 0;
+        min-width: 450px;
+    }
+
+    .contact__heading {
+        width: 500px;
+        height: 140px;
+
+        font-size: 50px;
+    }
+
+    .projects__heading {
+        top: 30px;
+    }
+    
+    .projects__container {
+        width: 100vw;
+        height: 800px;
+    }
+    
+    .projects__tile--container {
+        width: 100vw;
+        height: 400px;
+    }
+
+    .project__tile--right {
+        margin-left: 0;
+    }
+    
+    .project__tile--left {
+        margin-right: 0;
+    }
+
+    .projects__group {
+        flex-flow: row nowrap;
+        gap: 50px;
+    }
+
+    .projects__group--1 {
+        justify-content: right;
+        right: 10%;
+    }
+
+    .projects__group--2 {
+        justify-content: left;
+        margin-top: 50px;
+    }
+
+   .projects__icon--saturn {
+        top: 580px;
+        left: 50px;
+    }
+   
+    .projects__icon--star {
+        display: none;
+    }
+    
+    .projects__icon--fly {
+        top: 945px;
+        left: 57%;
+
+        animation-delay: 1s;
+        z-index: 2;
+    }
+
+    .projects__icon--asteroid {
+        right: 3%;
+    }
+
+    .footer__container {
+        width: 500px;
+        margin: auto;
+    }
+
+    .footer__copyright--container {
+        top: 330px;
+    }
+}
+
+@media (min-width:900px) {
+    
+    .welcome__heading {
+        width: 470px;
+        font-size: 50px;
+    }
+
+    .welcome__text--container {
+        width: 600px;
+    }
+    
+    .welcome__text {
+        font-size: 20px;
+        min-width: 600px;
+
+        padding: 6px;
+    }
+   
+    .projects__container {
+        height: 1050px;
+
+        background-image: linear-gradient(var(--dark-shade), var(--dark));
+    }
+
+    .projects__heading {
+        font-size: 50px;
+
+        top: 130px;
+    }
+
+    .projects__icon--saturn {
+        top: 620px;
+    }
+
+    .projects__icon--fly {
+        top: 1070px;
+    }
+
+    .projects__tile--container {
+        height: 520px;
+
+        top: 250px;
+    }
+
+    .project__tile {
+        width: 220px;
+        height: 220px;
+    }
+
+    .projects__group--1 {
+        position: relative;
+        right: -8%;
+    }
+
+    .projects__group--2 {
+        position: relative;
+        left: -8%;
+    }
+
+    .projects__button--container {
+        right: 0;
+        margin-top: 60px;
+    }
+
+    .projects__button {
+        font-size: 30px;
+    }
+
+    .projects__icon--rocket {
+        bottom: -200px;
+        left: -50px;
+
+        display: flex;
+
+        animation: floating2 3s infinite 1.5s ease-in-out;
+    }
+
+    .projects__icon--asteroid {
+        top: 10px;
+        right: -10%;
+    }
+
+    .contact__container {
+        height: 700px;
+    }
+
+    .contact__heading {
+        width: 500px;
+        top: 100px;
+    }
+
+    .footer__container {
+        width: 700px;
+
+        margin-top: 150px;
+        margin-right: -80px;
+        justify-content: center;
+    }
+
+    .contact__links--container {
+        left: -200px;
+    }
+
+    .contact__link--github {
+        top: -50px;
+        left: 310px;
+    }
+    
+    .contact__link--email {
+        top: 30px;
+        left: 100px;
+    }
+    
+    .contact__link--pinterest {
+        top: 170px;
+        left: -50px;
+    
+    }
+    
+    .footer__icon {
+        width: 600px;
+        height: 700px;
+
+        bottom: 20px;
+
+    
+        transform: none;
+    }
+
+    .footer__copyright--container {
+        top: 385px;
+    }
+}
